@@ -1,5 +1,4 @@
 const phrase = 'turpentine and turtles';
-
 const phraseArr = [];
 
 for(let i = 0; i < phrase.length; i++){
@@ -7,15 +6,11 @@ for(let i = 0; i < phrase.length; i++){
         phraseArr.push(phrase[i]);
     }
 }
-console.log(phraseArr);
-
 for(let i = phraseArr.length; i >= 0; i--){
     if(phraseArr[i] === 'u' || phraseArr[i] === 'e'){
         phraseArr.splice(i, 0, phraseArr[i]);
     }
 }
 
-console.log(phraseArr);
-
-const whale = phraseArr.join('');
+const whale = phraseArr.join('').toUpperCase();
 console.log(whale);
